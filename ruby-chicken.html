@@ -87,7 +87,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-a.button {
+a.return-home-button {
   position: absolute;
   left: 4px;
   top: 4px;
@@ -99,18 +99,32 @@ a.button {
   text-align: center;
   border-radius: 8px;
   font-size: large;
-  padding: 1px 6px;
-  border: 1px outset buttonborder;
-  border-radius: 3px;
+  border-radius: 10px;
   text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px 10px;
+  overflow: hidden;
+  color: #ffffff;
 }
 
 h1 {
   text-align: center;
 }
+
+h2{
+  text-align: left;
+}
+
+h4{
+  text-align: left;
+}
 ul {
-  text-align: center;
-  list-style-type: none;
+  text-align: left;
+  list-style-position: inside;
+}
+
+a.to-makhani-sauce{
+  color: blue;
 }
 
 </style>
@@ -118,13 +132,39 @@ ul {
 <body>
 
 <h1><u>Ruby Chicken Recipe</u></h1>
+<h2>Ingredients:</h2>
+<h4>Main Ingredients:</h4>
+
 <ul>
-  <li>Chicken</li>
-  <li>Ruby</li>
-  <li>Curry</li>
+  <li>1 Quantity <a class="to-makhani-sauce" href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/makhani-sauce.html">Makhani Sauce</a></li>
+  <li>700g Chicken Thighs</li>
+  <li>50ml Double Cream</li>
 </ul>
 
-<a class="button" href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/recipes.html">< Recipes</a>
+
+<h4>Marinade:</h4>
+<ul>
+  <li>10g Ginger</li>
+  <li>20g Gralic</li>
+  <li>5g Salt</li>
+  <li>1 tsp Deggi Mirch Chilli Powder</li>
+  <li>1.5 tsp Ground Cumin</li>
+  <li>0.5 tsp Garam Masala</li>
+  <li>2 tsp Lime Juice</li>
+  <li>2 tsp Vegetable Oil</li>
+  <li>75g Greek Yoghurt</li>
+</ul>
+
+<h2>Instructions:</h2>
+<ol>
+  <li>For the marinade, blitz the ingredients together in a blender to a smooth paste. Transfer to a bowl.</li>
+  <li>Cut the chicken into 4cm chunks. Add to the marinade and turn to coat. Cover and leave to marinate in the fridge for 6–24 hours.</li>
+  <li>Heat the grill to medium-high. Place the marinated chicken on a rack in the grill pan, brush with the melted butter and grill for 8–10 minutes, until cooked through and nicely charred.</li>
+  <li>Warm a large saucepan over a medium-low heat. Add the makhani sauce, cream and grilled chicken and simmer very gently for 10 minutes.</li>
+  <li>Serve the curry garnished with ginger matchsticks, chopped coriander and pomegranate seeds, with a bowl of steamed rice on the side.</li>
+</ol>
+
+<a class="return-home-button" href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/recipes.html">< Recipes</a>
 
 <label class="switch">
     <input type="checkbox" onchange="darkMode()">

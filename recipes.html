@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Lochlan's Recipes</title>
 
 <style>
+
 body {
   padding: 25px;
   background-color: white;
@@ -85,14 +87,28 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+h1 {
+  text-align: center;
+}
+ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+
+
+
 </style>
 </head>
 <body>
 
-<h2>Toggle Dark/Light Mode</h2>
-<p>Click the button to toggle between dark and light mode for this page.</p>
-
-
+<h1><u>Lochlan's Recipes</u></h1>
+<ul>
+  <li><a href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/ruby-chicken.html" target="_self">Ruby Chicken Curry</a></li>
+  <li>Chocolate Lava Cake</li>
+  <li>Chocolate Chip Cookies</li>
+  <li>Macaroni Cheese</li>
+</ul>
 
 <label class="switch">
     <input type="checkbox" onchange="darkMode()">
@@ -104,6 +120,8 @@ function darkMode() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
+
+
 </script>
 
 </body>

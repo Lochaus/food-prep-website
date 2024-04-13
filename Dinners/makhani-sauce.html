@@ -87,11 +87,31 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-a.return-home-button {
+a.return-dinners-button {
   position: absolute;
   left: 4px;
   top: 4px;
   display:block;
+  width: 110px;
+  height: 30px;
+  background-color: green;
+  border: none;
+  text-align: center;
+  border-radius: 8px;
+  font-size: large;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px 10px;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+a.return-recipes-button {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  display: block;
   width: 110px;
   height: 30px;
   background-color: green;
@@ -131,7 +151,7 @@ a.return-ruby-chicken{
 </head>
 <body>
 
-<h1><u>Makhani Sauce Recipe <a class="return-ruby-chicken" href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/ruby-chicken.html">(Ruby Chicken)</a></u></h1>
+<h1><u>Makhani Sauce Recipe <a class="return-ruby-chicken" href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/Dinners/ruby-chicken.html">(Ruby Chicken)</a></u></h1>
 <h2>Makhani Sauce Ingredients:</h2>
 
 
@@ -180,7 +200,8 @@ a.return-ruby-chicken{
     </li>
 </ol>
 
-<a class="return-home-button" href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/recipes.html">< Recipes</a>
+<a class="return-dinners-button" href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/dinners.html">< dinners</a>
+<a class="return-recipes-button" href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/recipes.html">< recipes</a>
 
 <label class="switch">
     <input type="checkbox" onchange="darkMode()">

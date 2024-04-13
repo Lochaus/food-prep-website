@@ -7,7 +7,7 @@
 
 body {
   padding: 25px;
-  background-color: white;
+  background-color: rgb(253, 213, 190);
   color: black;
   font-size: 25px;
 }
@@ -87,44 +87,65 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-a.return-cocktails-button {
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+a.return-cocktails-button{
   position: absolute;
-  left: 4px;
   top: 4px;
-  display:block;
-  width: 110px;
-  height: 30px;
-  background-color: green;
-  border: none;
-  text-align: center;
-  border-radius: 8px;
-  font-size: large;
-  border-radius: 10px;
-  text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 10px 10px;
-  overflow: hidden;
-  color: #ffffff;
+  left: 4px;
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background: #0066cc;
+  padding: 10px 30px;
+  border: 2px solid #0066cc;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 25px 25px 25px 25px;
+  transition : 273ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
 }
 
-a.return-recipes-button {
-  position: absolute;
-  right: 4px;
-  top: 4px;
-  display: block;
-  width: 110px;
-  height: 30px;
-  background-color: green;
-  border: none;
-  text-align: center;
-  border-radius: 8px;
-  font-size: large;
-  border-radius: 10px;
-  text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 10px 10px;
-  overflow: hidden;
+a.return-cocktails-button:hover{
+  transition : 273ms;
+  padding: 10px 33px;
+  transform : translateY(-0px);
+  background: #0066cc;
   color: #ffffff;
+  border: solid 2px #0066cc;
+}
+
+a.return-recipes-button{
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background: #0066cc;
+  padding: 10px 30px;
+  border: 2px solid #0066cc;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 25px 25px 25px 25px;
+  transition : 273ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+a.return-recipes-button:hover{
+  transition : 273ms;
+  padding: 10px 33px;
+  transform : translateY(-0px);
+  background: #0066cc;
+  color: #ffffff;
+  border: solid 2px #0066cc;
 }
 
 h1 {
@@ -147,31 +168,61 @@ a.to-makhani-sauce{
   color: blue;
 }
 
+label{
+  display: block;
+}
+
+fieldset legend{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+fieldset input[type=checkbox]:checked + span{
+  text-decoration: line-through;
+}
+
 </style>
 </head>
 <body>
-
+  
 <h1><u>Baileys Coffee Frappe</u></h1>
-<h2>Ingredients:</h2>
 
-<ul>
-  <li>3 cubes Ice</li>
-  <li>4 shots Baileys</li>
-  <li>4 shots Milk</li>
-  <li>Squirt of Caramel Syrup</li>
-  <li>1 tbsp Instant Coffee</li>
-</ul>
+<fieldset>
+  <legend>Ingredients</legend>
+  <div>
+    <input type="checkbox">
+    <span>3 Cubes Ice</span>
+  </div>
+  <div>
+    <input type="checkbox">
+    <span>4 shots Baileys</span>
+  </div>
+  <div>
+    <input type="checkbox">
+    <span>4 shots Milk</span>
+  </div>
+  <div>
+    <input type="checkbox">
+    <span>Squirt of Caramel Syrup</span>
+  </div>
+  <div>
+    <input type="checkbox">
+    <span>1 tbsp Instant Coffee</span>
+  </div>
+</fieldset>
 
-
-<h2>Instructions:</h2>
-<ol>
+<fieldset>
+  <legend>Instructions</legend>
+  <ol>
     <li>Add all ingredients to cocktail shaker or blender</li>
     <li>Shake/Blend until well combined</li>
     <li>Pour into glass</li>
 </ol>
+</fieldset>
 
-<a class="return-cocktails-button" href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/cocktails.html">< cocktails</a>
-<a class="return-recipes-button" href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/recipes.html">< recipes</a>
+
+<a class="return-cocktails-button" href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/cocktails.html">cocktails</a>
+<a class="return-recipes-button" href="file:///C:/Users/Lochlan/Documents/Programming/GitHub/food-prep-website/recipes.html">recipes</a>
 
 <label class="switch">
     <input type="checkbox" onchange="darkMode()">
@@ -187,4 +238,3 @@ function darkMode() {
 
 </body>
 </html>
-

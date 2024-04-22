@@ -19,8 +19,8 @@
   fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
-        for (let i=0; i<data.baileysFrap.ingredient.length; i++) {
-          listEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.baileysFrap.quantity[i]} ${data.baileysFrap.ingredient[i]}</span></div>`)
+        for (let i=0; i<data.baileysFrappe.ingredient.length; i++) {
+          listEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.baileysFrappe.quantity[i]} ${data.baileysFrappe.ingredient[i]}</span></div>`)
         }
       }
       )
@@ -38,9 +38,8 @@
   fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
-        for (let i=0; i<data.baileysFrap.instructions.length; i++) {
-          listEl1.insertAdjacentHTML("beforeend", `<li>${data.baileysFrap.instructions[i]}</li>`)
-          console.log(data.baileysFrap.instructions[i])
+        for (let i=0; i<data.baileysFrappe.instructions.length; i++) {
+          listEl1.insertAdjacentHTML("beforeend", `<li>${data.baileysFrappe.instructions[i]}</li>`)
         }
       }
       )

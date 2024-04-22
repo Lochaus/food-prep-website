@@ -1,3 +1,96 @@
 {
-    "baileysFrap": {"instructions": ["Add all ingredients to a blender", "Blend until combined", "Pour into glass"], "ingredient": ["Ice Cubes", "of Baileys", "of Milk", "of Caramel Syrup", "of Instant Coffee"], "quantity": ["3", "4 Shots", "4 Shots", "1 tbsp", "1 tbsp"]}
+    "baileysFrappe": {
+        "instructions": ["Add all ingredients to a blender", "Blend until combined", "Pour into glass"],
+        "ingredient": ["Ice Cubes", "of Baileys", "of Milk", "of Caramel Syrup", "of Instant Coffee"],
+        "quantity": ["3", "4 Shots", "4 Shots", "1 tbsp", "1 tbsp"],
+        "quantityMetric": ["3", "100ml", "100ml", "15ml", "5g"]
+    },
+    "mangoDaiquiri": {
+        "instructions": ["Add all ingredients to a blender", "Blend until combined", "Pour into glass"],
+        "ingredient": ["Ice Cubes", "Frozen Mango Pieces", "of Rum", "of Lemon Juice", "of Sugar Syrup", "of Pineapple Juice"],
+        "quantity": ["3", "10", "2 - 4 Shots", "1 tbsp", "1 tsp", "4 Shot"],
+        "quantityMetric": ["3", "100ml", "100ml", "15ml", "5g"]
+    },
+    "mangoPineappleDaiquiri": {
+        "instructions": ["Add all ingredients to blender", "Blend until combined", "Pour into glass"],
+        "ingredient": ["Ice Cubes", "of Sugar Syrup", "Frozen Pineapple Pieces", "Frozen Mango Pieces", "of Lemon Juice", "of Rum", "of Peach Schnapps"],
+        "quantity": ["3", "1 tsp", "5", "5", "1 Shot", "2 Shots", "2 Shots"],
+        "quantityMetric": []
+    },
+    "pineappleFreeze": {
+        "instructions": ["Add all ingredients to cocktail shaker", "Shake until combined and ice mostly incoporated", "Pour into glass"],
+        "ingredient": ["Ice Cubes", "of Sugar Syrup", "of Rum", "of Lime Juice", "of Pineapple Juice"],
+        "quantity": ["3", "1 tsp", "2 Shots", "1 Shot", "4 Shots"],
+        "quantityMetric": []
+    },
+    "strawberryDaiquiri": {
+        "instructions": ["Add all ingredients to blender", "Blend until combined", "Pour into glass"],
+        "ingredient": ["Ice Cubes", "Frozen Strawberreis", "of Sugar Syrup", "of Rum", "of Lemon Juice", "of Lemonade"],
+        "quantity": ["3", "8", "1 tsp", "2-4 Shots", "Squirt", "4 Shots"],
+        "quantityMetric": []
+    },
+    "chocolateLavaCake": {
+        "instructions": ["Set oven to 230&deg;c", "Chop butter and chocolate into small chunks and melt in double boiler", "Add sugar, 2 large eggs and 2 large egg yolks to mixer", "Mix sugar and eggs until fluffy and doubled in size", "Add salt and flour to melted chocoalte butter mix", "Fold box mixtures togehter", "Divide mixture into 4 buttered ramekins", "Bake in oven at 230&deg;c for 8 mins until top is set", "Let cool before serving onto a plate"],
+        "ingredient": ["of Butter", "of Bittersweet Chocolate", "of Granulated Sugar", "Large Eggs", "of Salt", "of Plain Flower"],
+        "quantity": ["113g", "168g", "50g", "4", "Pinch", "2 tbsp"],
+        "quantityMetric": []
+    },
+    "cookies": {
+        "instructions": ["Cream together butter and sugars in stand mixer", "Beat in eggs and vanilla extract", "Add all dry ingredients and mix till combined", "Add chocolate chips and mix till combined", "Add salt and flour to melted chocoalte butter mix", "Use spoon or ice cream scoop to sererate into even balls", "Let balls set in fridge before moving into resealable bags", "Bake in oven at 190&deg;c for 12-15 mins or until top is browning", "Serve and eat whilst warm"],
+        "ingredient": ["of Butter", "of Bittersweet Chocolate/Chocolate Chips", "of Granulated Sugar", "of Light Brown Sugar", "of Plain Flour", "of Vanilla Extract", "of Bicarbonate of Soda", "of Baking Powder", "of Salt", "Large Eggs"],
+        "quantity": ["227g", "396g", "232g", "213g", "410g", "2 tsp", "1 tsp", "0.5 tsp", "1 tsp", "2"],
+        "quantityMetric": []
+    },
+    "crepes": {
+        "instructions": ["Mix ingredients till fully combined", "Cover hot frying pan in thin layer", "Flip once top is set then fry till golden brown", "Serve with desired toppings"],
+        "ingredient": ["of Plain Flour", "Large Eggs", "of Milk", "of Salt"],
+        "quantity": ["100g", "2", "300ml", "Pinch"],
+        "quantityMetric": []
+    },
+    "broccoliMacaroniCheese": {
+        "instructions": ["Cook pasta till al dente and add in broccoli florets for last few minutes", "Drain and set aside pasta and broccoli", "Saute garlic in olive oil for a few minutes until browned", "Add flour until combined with oil", "Slowly whisk in vegetable/chicken stock until smooth", "Add milk and cook until mixture simmers", "Add cheese, salt and pepper and mix till cheese is melted", "Mix together cheese and pasta mixutre", "Add to a baking tray and top with cheese and breadcrumbs", "Cook in oven at 180&deg;c for 20 minutes or place in fridge freezer for later cooking", "If refrigerated, cook at 180&deg;c for 30 minutes"],
+        "ingredient": ["of Dry Pasta", "Bunch of Brocooli", "of Olive Oil", "Cloves of Garlic", "of Flour", "of Vegetable/Chicken Stock", "of Milk", "of Grated Cheese", "of Salt", "of Pepper", "of Cooked Chicken Thighs", "of Cheese", "Panko Bread Crumbs"],
+        "quantity": ["450g", "1", "2 tbsp", "3", "3 tbsp", "250ml", "250ml", "300g", "0.5 tsp", "1 tsp", "300g", "50g", "Some"],
+        "quantityMetric": []
+    },
+    "makhaniSauce": {
+        "instructions": ["Take 15g garlic and finely dice it. Warm a large saucepan over a medium-high heat and add the oil. Toss in the chopped garlic and fry until light golden brown and slightly crispy, about 7–8 minutes. Remove with a slotted spoon and drain on kitchen paper.", "Grate the remaining garlic and the ginger to a fine paste on a microplane, or grind using a pestle and mortar", "Using a blender, blitz the chopped tomatoes to a fine consistency.", "Place the saucepan containing the oil back over a medium-high heat and add the bay leaves, green and black cardamom pods and the cinnamon sticks. Let them crackle for 1 minute, stirring regularly.", "Turn the heat down and add the garlic and ginger paste. Cook for 5 minutes, allowing the paste to brown but not burn.", "Add the tomatoes, salt and chilli powder to the pan. Bring to a rapid simmer and cook until reduced by half, stirring regularly so that it doesn’t catch. This should take about 30 minutes.", "Add the butter and simmer for a further 5 minutes.", "Add the garam masala, sugar, honey, cumin, crispy garlic, dried fenugreek and fresh dill fonds and cook for a further 15 minutes.", "If the sauce is to be used straight away, add the cream and simmer gently for 5 minutes; it is then ready to use. If not using immediately, allow to cool, cover and refrigerate; add the cream when you reheat the sauce to assemble your dish."],
+        "ingredient": ["of Garlic", "of Ginger", "of Vegetable Oil", "of Chopped Tomatoes", "Bay Leaves", "Green Cardamon Pods", "Black Cardamon Pods", "of Salt", "of Deggi Mirch Chilli Powder", "of Butter", "of Garam Masala", "of Sugar", "of Honey", "of Ground Cumin", "of Fenugreek Leaves", "of Dill", "of Double Cream"],
+        "quantity": ["35g", "20g", "175ml", "800g", "2", "6", "2", "2 tsp", "1.5 tsp", "30g", "1 tsp", "20g", "1 tbsp", "1 tsp", "1 tsp", "0.5 tsp", "80ml"],
+        "quantityMetric": []
+    },
+    "pizza": {
+        "instructions": ["Heat water in microwave till warm (≈38&deg;c)", "Mix in sugar and yeast and wait until starts foaming", "Add flour, yeast water, olive oil and salt to bowl and mix", "Add extra flour as needed to prevent dough from being too sticky", "Knead till dough can be stretch thinly without tearing", "Add dough to a bowl greased with olive oil and cover with plastic wrap leave for at least 8 hours or overnight in fridge", "Split dough into 4-6 balls", "Shape dough into balls then let rest on a baking tray", "Heat oven to max temperature with a pizza stone/steel for at least an hour", "Form dough into pizza shape", "Add pizza sauce and cheese then any other extra toppings", "Transfer into oven using a pizza peel (can be easier if dough is on baking paper)", "Cook in oven until cheese is browned, turn half way"],
+        "ingredientDough": ["of Warm Water", "of Sugar", "of Instant Yeast", "of Olive Oil", "of Salt", "of Bread Flour"],
+        "quantityDough": ["530ml", "12g", "9g", "27g", "18g", "700-1000g"],
+        "toppings": ["Pizza Sauce", "Mozzarella"],
+        "optionalToppings": ["Red Onion", "Chorizo", "Precooked Chicken", "Chillies of Jalapeños" , "Chillie Oil", "Peppers", "Basil", "Pineapple"],
+        "quantityMetric": []
+    },
+    "porkJoint": {
+        "instructions": [],
+        "ingredient": [],
+        "quantity": [],
+        "quantityMetric": []
+    },
+    "rubyChicken": {
+        "instructions": ["For the marinade, blitz the ingredients together in a blender to a smooth paste. Transfer to a bowl.", "Cut the chicken into 4cm chunks. Add to the marinade and turn to coat. Cover and leave to marinate in the fridge for 6–24 hours.", "Heat the grill to medium-high. Place the marinated chicken on a rack in the grill pan, brush with the melted butter and grill for 8–10 minutes, until cooked through and nicely charred.", "Warm a large saucepan over a medium-low heat. Add the makhani sauce, cream and grilled chicken and simmer very gently for 10 minutes.", "Serve the curry garnished with ginger matchsticks, chopped coriander and pomegranate seeds, with a bowl of steamed rice on the side."],
+        "mainIngredient": ["of Makhani Sauce", "of Chicken Thighs", "of Double Cream"],
+        "marinadeIngredient": ["of Ginger", "of Garlic", "of Salt", "of Deggi Mirch Chilli Powder", "of Ground Cumin", "of Garam Masala", "of Lime Juice", "of Vegetable Oil", "of Greek Yoghurt"],
+        "quantityMain": ["1 Quantity", "700g", "50ml"],
+        "quantityMarinade": ["10g", "20g", "5g", "1 tsp", "1.5 tsp", "0.5 tsp", "2 tsp", "2 tsp", "75g"],
+        "quantityMetric": []
+    },
+    "baguette": {
+        "instructions": ["Bloom the yeast in the water to make sure it is alive", "Add the yeast, water and flour to a stand mixer and mix on low speed for 4 minutes", "After 4 minutes turn the speed up slightly and slowly add the salt and mix for 4 more minutes", "Turn dough out onto table and form into a tight ball before placing in flowered bowl to rise", "Allow to rise for an hour then place in the fridge overnight", "Seperate dough into 6-12 portions", "Form into baguette shapes then place on flowered kitchen towel", "Heat oven to 230&deg;c", "Add 150ml of boiling water to oven then place a baguettte in and cook till golden brown", "Repeat for all baguettes"],
+        "ingredient": ["of Strong Bread Flour", "of Dried Yeast", "of Water", "of Sea Salt"],
+        "quantity": ["1000g", "10g", "700g", "20g"],
+        "quantityMetric": ["3", "100ml", "100ml", "15ml", "5g"]
+    },
+    "togarashiMayonnaise": {
+        "instructions": ["Add all ingredients to a bowl and stir till combined", "Leave in bowl for dipping or transfer to squirt bottle"],
+        "ingredient": ["of Mayonnaise", "of Shichimi Togarashi", "of Rice Vinegar", "of Sesame Oil"],
+        "quantity": ["1 cup", "1 tbsp", "2 tsp", "0.5 tsp"],
+        "quantityMetric": ["3", "100ml", "100ml", "15ml", "5g"]
+    }
 }

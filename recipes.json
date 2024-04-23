@@ -68,9 +68,9 @@
         "quantityMetric": []
     },
     "porkJoint": {
-        "instructions": [],
-        "ingredient": [],
-        "quantity": [],
+        "instructions": ["24 hours before cooking cover the skin of the crackling with salt to dry out and put in rack in fridge overnight", "Preheat oven to 230&deg;c and whilst the oven warms brush off all old salt off the skin", "Season the pork then brush some vegetable oil on the skin then place in the oven", "Cook for 30 minutes then reduce the temperature to 180&deg;c and cook till internal temperature reaches 65&deg;c"],
+        "ingredient": ["Pork Crackling Joint", "Salt"],
+        "quantity": ["0.5-1.5kg", "Some"],
         "quantityMetric": []
     },
     "rubyChicken": {

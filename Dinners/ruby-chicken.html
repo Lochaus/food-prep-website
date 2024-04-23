@@ -13,14 +13,31 @@
   <legend>Ingredients</legend>
 </fieldset>
 
+<fieldset id="marinade-fieldset">
+  <legend>Marinade Ingredients</legend>
+</fieldset>
+
 <script>
-  const listEl = document.querySelector("#ingredients-fieldset")
+  const ingredientEl = document.querySelector("#ingredients-fieldset")
 
   fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
-        for (let i=0; i<data.rubyChicken.ingredient.length; i++) {
-          listEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.rubyChicken.quantity[i]} ${data.rubyChicken.ingredient[i]}</span></div>`)
+        for (let i=0; i<data.rubyChicken.mainIngredient.length; i++) {
+          ingredientEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.rubyChicken.quantityMain[i]} ${data.rubyChicken.mainIngredient[i]}</span></div>`)
+        }
+      }
+      )
+</script>
+
+<script>
+  const marinadeEl = document.querySelector("#marinade-fieldset")
+
+  fetch('../recipes.json')
+      .then(res => res.json())
+      .then(data => {
+        for (let i=0; i<data.rubyChicken.marinadeIngredient.length; i++) {
+          marinadeEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.rubyChicken.quantityMarinade[i]} ${data.rubyChicken.marinadeIngredient[i]}</span></div>`)
         }
       }
       )

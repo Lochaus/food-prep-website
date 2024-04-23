@@ -64,7 +64,7 @@
         "ingredientDough": ["of Warm Water", "of Sugar", "of Instant Yeast", "of Olive Oil", "of Salt", "of Bread Flour"],
         "quantityDough": ["530ml", "12g", "9g", "27g", "18g", "700-1000g"],
         "toppings": ["Pizza Sauce", "Mozzarella"],
-        "optionalToppings": ["Red Onion", "Chorizo", "Precooked Chicken", "Chillies of Jalapeños" , "Chillie Oil", "Peppers", "Basil", "Pineapple"],
+        "optionalToppings": ["Red Onion", "Chorizo", "Precooked Chicken", "Chillies or Jalapeños" , "Chillie Oil", "Peppers", "Basil", "Pineapple"],
         "quantityMetric": []
     },
     "porkJoint": {

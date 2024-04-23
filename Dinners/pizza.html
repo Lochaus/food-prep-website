@@ -10,17 +10,51 @@
 <h3>Makes 1 serving</h3>
 
 <fieldset id="ingredients-fieldset">
-  <legend>Ingredients</legend>
+  <legend>Dough Ingredients</legend>
+</fieldset>
+
+<fieldset id="toppings-fieldset">
+  <legend>Topping</legend>
+</fieldset>
+
+<fieldset id="optional-toppings-fieldset">
+  <legend>Optional Toppings</legend>
 </fieldset>
 
 <script>
-  const listEl = document.querySelector("#ingredients-fieldset")
+  const ingredientsFieldsetEl = document.querySelector("#ingredients-fieldset")
 
   fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
-        for (let i=0; i<data.pizza.ingredient.length; i++) {
-          listEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.pizza.quantity[i]} ${data.pizza.ingredient[i]}</span></div>`)
+        for (let i=0; i<data.pizza.ingredientDough.length; i++) {
+          ingredientsFieldsetEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.pizza.quantityDough[i]} ${data.pizza.ingredientDough[i]}</span></div>`)
+        }
+      }
+      )
+</script>
+
+<script>
+  const toppingsFieldsetEl = document.querySelector("#toppings-fieldset")
+
+  fetch('../recipes.json')
+      .then(res => res.json())
+      .then(data => {
+        for (let i=0; i<data.pizza.toppings.length; i++) {
+          toppingsFieldsetEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.pizza.toppings[i]}</span></div>`)
+        }
+      }
+      )
+</script>
+
+<script>
+  const optionalTopFieldsetEl = document.querySelector("#optional-toppings-fieldset")
+
+  fetch('../recipes.json')
+      .then(res => res.json())
+      .then(data => {
+        for (let i=0; i<data.pizza.optionalToppings.length; i++) {
+          optionalTopFieldsetEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.pizza.optionalToppings[i]}</span></div>`)
         }
       }
       )
@@ -33,13 +67,13 @@
 </fieldset>
 
 <script>
-  const listEl1 = document.querySelector("#instructions-list")
+  const instructionsEl = document.querySelector("#instructions-list")
   
   fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
         for (let i=0; i<data.pizza.instructions.length; i++) {
-          listEl1.insertAdjacentHTML("beforeend", `<li>${data.pizza.instructions[i]}</li>`)
+          instructionsEl.insertAdjacentHTML("beforeend", `<li>${data.pizza.instructions[i]}</li>`)
         }
       }
       )

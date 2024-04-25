@@ -1,43 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bailey's Coffee Frappe</title>
+<title>Beef Miso Soup</title>
 </head>
 <body>
   
-<h1>Bailey's Coffee Frappe</h1>
+<h1>Beef Miso Soup</h1>
 
-<h3>Makes 1 serving</h3>
-
-<label for="lab1">Test:</label>
-<input type="number" id="id1" placeholder="Enter number of serving" max="10">
-<input type="button" id ="btn1" value="Click Me">
-<p class="output" id="out1"></p>
+<h3>Makes 8 serving</h3>
 
 <fieldset id="ingredients-fieldset">
   <legend>Ingredients</legend>
 </fieldset>
 
 <script>
-  const listEl = document.querySelector("#ingredients-fieldset")
-  const ingredientMultiplier = 1
-
-  // const txt1 = document.getElementById('id1')
-  // const btn1 = document.getElementById('btn1')
-  // const out11 = document.getElementById('output')
-  
-  // function test() {
-  //   ingredientMultiplier = txt1.value
-  // }
-
-  // const ingredientMultiplier = btn1.addEventListener("click", test)
-
+  const ingredientEl = document.querySelector("#ingredients-fieldset")
 
   fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
-        for (let i=0; i<data.baileysFrappe.ingredients.length; i++) {
-          listEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.baileysFrappe.quantities[i]*ingredientMultiplier} ${data.baileysFrappe.unit[i]} ${data.baileysFrappe.ingredients[i]}</span></div>`)
+        for (let i=0; i<data.beefMisoSoup.ingredients.length; i++) {
+          ingredientEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.beefMisoSoup.quantities[i]} ${data.beefMisoSoup.units[i]} ${data.beefMisoSoup.ingredients[i]}</span></div>`)
         }
       }
       )
@@ -50,21 +33,21 @@
 </fieldset>
 
 <script>
-  const listEl1 = document.querySelector("#instructions-list")
+  const instructionsEl = document.querySelector("#instructions-list")
   
   fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
-        for (let i=0; i<data.baileysFrappe.instructions.length; i++) {
-          listEl1.insertAdjacentHTML("beforeend", `<li>${data.baileysFrappe.instructions[i]}</li>`)
+        for (let i=0; i<data.beefMisoSoup.instructions.length; i++) {
+          instructionsEl.insertAdjacentHTML("beforeend", `<li>${data.beefMisoSoup.instructions[i]}</li>`)
         }
       }
       )
 </script>
 
 
-<a class="return-cocktails-button" href="../cocktails">cocktails</a>
-<a class="return-recipes-button" href="./">recipes</a>
+<a class="return-cocktails-button" href="../dinners">dinners</a>
+<a class="return-recipes-button" href="../">recipes</a>
 
 <label class="switch">
     <input type="checkbox" onchange="darkMode()">

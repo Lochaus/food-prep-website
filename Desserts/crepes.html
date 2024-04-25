@@ -19,8 +19,8 @@
   fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
-        for (let i=0; i<data.crepes.ingredient.length; i++) {
-          listEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.crepes.quantity[i]} ${data.crepes.ingredient[i]}</span></div>`)
+        for (let i=0; i<data.crepes.ingredients.length; i++) {
+          listEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.crepes.quantities[i]} ${data.crepes.ingredients[i]}</span></div>`)
         }
       }
       )

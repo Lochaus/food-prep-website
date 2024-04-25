@@ -19,8 +19,8 @@
   fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
-        for (let i=0; i<data.porkJoint.ingredient.length; i++) {
-          listEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.porkJoint.quantity[i]} ${data.porkJoint.ingredient[i]}</span></div>`)
+        for (let i=0; i<data.porkJoint.ingredients.length; i++) {
+          listEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.porkJoint.quantities[i]} ${data.porkJoint.ingredients[i]}</span></div>`)
         }
       }
       )

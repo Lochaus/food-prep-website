@@ -20,7 +20,7 @@
       .then(res => res.json())
       .then(data => {
         for (let i=0; i<data.beefMisoSoup.ingredients.length; i++) {
-          ingredientEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.beefMisoSoup.quantities[i]} ${data.beefMisoSoup.units[i]} ${data.beefMisoSoup.ingredients[i]}</span></div>`)
+          ingredientEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.beefMisoSoup.quantities[i]*4} ${data.beefMisoSoup.units[i]} ${data.beefMisoSoup.ingredients[i]}</span></div>`)
         }
       }
       )

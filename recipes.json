@@ -101,7 +101,7 @@
     },
     "beefMisoSoup": {
         "instructions": ["Add beef mince to hot pan and press flat until browned on one side, then flip over to cook other side", "Break up the mince into lots of small browned pieces then set aside", "Dice the onion and add to the pan deglasing with a bit of water when necessary", "After 5 minutes add the garlic and ginger then cook for a minute until fragrant", "Add in the mirin to help deglase the pan", "Add the dashi stock and the chicken stock and bring to a simmer", "Disolve 75g of miso paste into the soup", "Return the mince back to the pan and simmer for 10 minutes and season to taste"],
-        "ingredients": ["of Beef Mince", "Onion", "Garlic Cloves", "Grated Ginger", "Dashi Powder Stock", "of Chicken Stock", "of Miso Paste", "of Mirin"],
+        "ingredients": ["of Beef Mince", "Onion", "Garlic Cloves", "of Grated Ginger", "Dashi Powder Stock", "of Chicken Stock", "of Miso Paste", "of Mirin"],
         "quantities": [500, 1, 4, 1, 900, 1800, 75, 1],
         "units": ["g", "", "", "Inch Knob", "ml", "ml", "g", "Splash"]
     }

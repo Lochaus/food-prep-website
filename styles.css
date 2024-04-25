@@ -173,6 +173,7 @@ input:checked + .slider:before {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+@import 'bulma/css/bulma.css';
 
 a.return-cocktails-button{
     position: absolute;
@@ -236,16 +237,22 @@ h1 {
     text-align: center;
 }
 
-h2{
+h2 {
     text-align: left;
 }
 
-h3{
+h3 {
     text-align: center;
 }
+
 ul {
     text-align: left;
     list-style-position: inside;
+}
+
+ul.recipes {
+    text-align: center;
+    list-style-type: none;
 }
 
 a.to-makhani-sauce{

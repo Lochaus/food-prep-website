@@ -8,11 +8,22 @@
 <link href="./styles.css" rel="stylesheet" type="text/css">
 
 <h1><u>Other Recipes</u></h1>
-<ul class="recipes">
-  <li><a href="./Other/togarashi-mayo" target="_self">Togarashi Mayonnaise</a></li>
-  <li><a href="./Other/baguette" target="_self">Baguette's</a></li>
-  <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Lochlan's Secret Sauce</a></li>
+<ul class="recipes" id="recipes-test">
 </ul>
+
+<script>
+  const recipeTestEl = document.querySelector("#recipes-test")
+  fetch('./recipes.json')
+    .then(res => res.json())
+    .then(data => {
+      for (const [key, value] of Object.entries(data)) {
+        if (value.tags.includes("other")) {
+          recipeTestEl.insertAdjacentHTML("beforeend", `<li><a href=${value.link}>${value.name}</a></li>`)
+        }
+      }
+      console.log(Object.keys(data))
+    })
+</script>
 
 <a class="return-recipes-button" href="./">recipes</a>
 

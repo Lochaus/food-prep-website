@@ -8,13 +8,22 @@
 <link href="./styles.css" rel="stylesheet" type="text/css">
 
 <h1><u>Cocktails</u></h1>
-<ul class="recipes">
-    <li><a href="./Cocktails/baileys-frappe" target="_self">Bailys Coffee Frappe</a></li>
-    <li><a href="./Cocktails/pineapple-freeze" target="_self">Pineapple Freeze</a></li>
-    <li><a href="./Cocktails/strawberry-daq" target="_self">Strawberry Daiquiri</a></li>
-    <li><a href="./Cocktails/mango-pineapple-daq" target="_self">Mango and Pineapple Daiquiri</a></li>
-    <li><a href="./Cocktails/mango-daq" target="_self">Mango Daiquiri</a></li>
+<ul class="recipes" id="recipes-test">
 </ul>
+
+<script>
+  const recipeTestEl = document.querySelector("#recipes-test")
+  fetch('./recipes.json')
+    .then(res => res.json())
+    .then(data => {
+      for (const [key, value] of Object.entries(data)) {
+        if (value.tags.includes("cocktail")) {
+          recipeTestEl.insertAdjacentHTML("beforeend", `<li><a href=${value.link}>${value.name}</a></li>`)
+        }
+      }
+      console.log(Object.keys(data))
+    })
+</script>
 
 <label class="switch">
     <input type="checkbox" onchange="darkMode()">

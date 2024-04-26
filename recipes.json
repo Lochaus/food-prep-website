@@ -23,7 +23,7 @@
         "ingredients": ["Ice Cubes", "of Sugar Syrup", "Frozen Pineapple Pieces", "Frozen Mango Pieces", "of Lemon Juice", "of Rum", "of Peach Schnapps"],
         "quantities": ["3", "1 tsp", "5", "5", "1 Shot", "2 Shots", "2 Shots"],
         "quantityMetric": [],
-        "link": "./Cocktails/mango-pineapplbe-daq",
+        "link": "./Cocktails/mango-pineapple-daq",
         "name": "Mango and Pineapple Daiquiri",
         "tags": ["cocktail"]
     },
@@ -41,7 +41,7 @@
         "ingredients": ["Ice Cubes", "Frozen Strawberreis", "of Sugar Syrup", "of Rum", "of Lemon Juice", "of Lemonade"],
         "quantities": ["3", "8", "1 tsp", "2-4 Shots", "Squirt", "4 Shots"],
         "quantityMetric": [],
-        "link": "./Cocktails/straberry-daq",
+        "link": "./Cocktails/strawberry-daq",
         "name": "Strawberry Daiquiri",
         "tags": ["cocktail"]
     },
@@ -59,7 +59,7 @@
         "ingredients": ["of Butter", "of Bittersweet Chocolate/Chocolate Chips", "of Granulated Sugar", "of Light Brown Sugar", "of Plain Flour", "of Vanilla Extract", "of Bicarbonate of Soda", "of Baking Powder", "of Salt", "Large Eggs"],
         "quantities": ["227g", "396g", "232g", "213g", "410g", "2 tsp", "1 tsp", "0.5 tsp", "1 tsp", "2"],
         "quantityMetric": [],
-        "link": "./Desserts/cookies",
+        "link": "./Desserts/cookie",
         "name": "Cookies",
         "tags": ["dessert"]
     },

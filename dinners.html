@@ -7,15 +7,6 @@
 
 <link href="./styles.css" rel="stylesheet" type="text/css">
 
-
-<div class="grid">
-  <div class="cell">Cell 1</div>
-  <div class="cell">Cell 2</div>
-  <div class="cell">Cell 3</div>
-  <div class="cell">Cell 4</div>
-</div>
-
-
 <h1><u>Dinners</u></h1>
 <ul class="recipes">
   <li><a href="./Dinners/ruby-chicken">Ruby Chicken Curry</a></li>
@@ -26,6 +17,24 @@
   <li><a href="./Dinners/cottage-pie">Cottage Pie</a></li>
   <li><a href="./Dinners/beef-miso-soup">Beef Miso Soup</a></li>
 </ul>
+
+<ul id="recipes-test">
+
+</ul>
+
+<script>
+  const recipeTestEl = document.querySelector("#recipes-test")
+  fetch('./recipes.json')
+    .then(res => res.json())
+    .then(data => {
+      for (const [key, value] of Object.entries(data)) {
+        recipeTestEl.insertAdjacentHTML("beforeend", `<li><a href=${value.link}>Test</a></li>`)
+        console.log(value.link)
+      }
+      console.log(Object.keys(data))
+    })
+
+</script>
 
 <a class="return-recipes-button" href="./">recipes</a>
 

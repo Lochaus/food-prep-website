@@ -8,17 +8,19 @@
 <link href="./styles.css" rel="stylesheet" type="text/css">
 
 <h1><u>Dinners</u></h1>
-<ul class="recipes" id="recipes-test">
-</ul>
+<div class="grid-container" id="recipes-grid">
+
+</div>
 
 <script>
-  const recipeTestEl = document.querySelector("#recipes-test")
+  const recipesEl = document.querySelector("#recipes-grid")
+
   fetch('./recipes.json')
     .then(res => res.json())
     .then(data => {
       for (const [key, value] of Object.entries(data)) {
         if (value.tags.includes("dinner")) {
-          recipeTestEl.insertAdjacentHTML("beforeend", `<li><a href=${value.link}>${value.name}</a></li>`)
+          recipesEl.insertAdjacentHTML("beforeend", `<div class="grid-item"><a href=${value.link}>${value.name}</a></div>`)
         }
       }
       console.log(Object.keys(data))

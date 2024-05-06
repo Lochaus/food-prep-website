@@ -272,8 +272,9 @@ fieldset input[type=checkbox]:checked + span{
     text-decoration: line-through;
 }
 
-
 .grid-container {
+    margin: 0 auto;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     display: grid;

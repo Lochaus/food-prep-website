@@ -8,20 +8,30 @@
 <link href="../styles.css" rel="stylesheet" type="text/css">
   
 <h1>Pizza</h1>
-
+<hr>
 <h3>Makes 1 serving</h3>
 
-<fieldset id="ingredients-fieldset">
-  <legend>Dough Ingredients</legend>
-</fieldset>
+<table id="table-wrapper">
+  <td>
+    <fieldset id="ingredients-fieldset">
+      <legend>Dough Ingredients</legend>
+    </fieldset>
+    <fieldset id="toppings-fieldset">
+      <legend>Toppings</legend>
+    </fieldset>
+    <fieldset id="optional-toppings-fieldset">
+      <legend>Opitonal Toppings</legend>
+    </fieldset>
+  </td>
+  <td>
+    <fieldset>
+      <legend>Instructions</legend>
+      <ol id="instructions-list">
+      </ol>
+    </fieldset>
+  </td>
+</table>
 
-<fieldset id="toppings-fieldset">
-  <legend>Topping</legend>
-</fieldset>
-
-<fieldset id="optional-toppings-fieldset">
-  <legend>Optional Toppings</legend>
-</fieldset>
 
 <script>
   const ingredientsFieldsetEl = document.querySelector("#ingredients-fieldset")
@@ -61,12 +71,6 @@
       }
       )
 </script>
-
-<fieldset>
-  <legend>Instructions</legend>
-  <ol id="instructions-list">
-  </ol>
-</fieldset>
 
 <script>
   const instructionsEl = document.querySelector("#instructions-list")

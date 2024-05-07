@@ -300,4 +300,20 @@ fieldset input[type=checkbox]:checked + span{
     text-align: center;
     font-size: 30px;
     padding: 20px;
-  }
+}
+
+#table-wrapper {
+    margin-left: 16%;
+    width: 75%;
+}
+
+td {
+    vertical-align: top;
+}
+
+hr {
+    width: 200px;
+    border: none;
+    background-color: black;
+    height: 2px;
+}

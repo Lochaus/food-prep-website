@@ -8,12 +8,23 @@
 <link href="../styles.css" rel="stylesheet" type="text/css">
   
 <h1>Mango Daiquiri</h1>
-
+<hr>
 <h3>Makes 1 serving</h3>
 
-<fieldset id="ingredients-fieldset">
-  <legend>Ingredients</legend>
-</fieldset>
+<table id="table-wrapper">
+  <td>
+    <fieldset id="ingredients-fieldset">
+      <legend>Ingredients</legend>
+    </fieldset>
+  </td>
+  <td>
+    <fieldset>
+      <legend>Instructions</legend>
+      <ol id="instructions-list">
+      </ol>
+    </fieldset>
+  </td>
+</table>
 
 <script>
   const listEl = document.querySelector("#ingredients-fieldset")
@@ -27,12 +38,6 @@
       }
       )
 </script>
-
-<fieldset>
-  <legend>Instructions</legend>
-  <ol id="instructions-list">
-  </ol>
-</fieldset>
 
 <script>
   const listEl1 = document.querySelector("#instructions-list")

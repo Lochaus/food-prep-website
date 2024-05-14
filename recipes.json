@@ -4,7 +4,6 @@
         "ingredients": ["Ice Cubes", "of Baileys", "of Milk", "of Caramel Syrup", "of Instant Coffee"],
         "quantities": [3, 4, 4, 1, 1],
         "unit": ["", "Shots", "Shots", "tbsp", "tbsp"],
-        "quantityMetric": ["3", "100ml", "100ml", "15ml", "5g"],
         "link": "./Cocktails/baileys-frappe",
         "name": "Baileys Frappe",
         "tags": ["cocktail"]
@@ -12,8 +11,8 @@
     "mangoDaiquiri": {
         "instructions": ["Add all ingredients to a blender", "Blend until combined", "Pour into glass"],
         "ingredients": ["Ice Cubes", "Frozen Mango Pieces", "of Rum", "of Lemon Juice", "of Sugar Syrup", "of Pineapple Juice"],
-        "quantities": ["3", "10", "2 - 4 Shots", "1 tbsp", "1 tsp", "4 Shot"],
-        "quantityMetric": ["3", "100ml", "100ml", "15ml", "5g"],
+        "quantities": [3, 10, 3, 1, 1, 4],
+        "unit": ["", "", "Shots", "tbsp", "tsp"],
         "link": "./Cocktails/mango-daq",
         "name": "Mango Daiquiri",
         "tags": ["cocktail"]
@@ -21,8 +20,8 @@
     "mangoPineappleDaiquiri": {
         "instructions": ["Add all ingredients to blender", "Blend until combined", "Pour into glass"],
         "ingredients": ["Ice Cubes", "of Sugar Syrup", "Frozen Pineapple Pieces", "Frozen Mango Pieces", "of Lemon Juice", "of Rum", "of Peach Schnapps"],
-        "quantities": ["3", "1 tsp", "5", "5", "1 Shot", "2 Shots", "2 Shots"],
-        "quantityMetric": [],
+        "quantities": [3, 1, 5, 5, 1, 2, 2],
+        "unit": ["", "tsp", "", "", "Shots", "Shots", "Shots"],
         "link": "./Cocktails/mango-pineapple-daq",
         "name": "Mango and Pineapple Daiquiri",
         "tags": ["cocktail"]
@@ -30,8 +29,8 @@
     "pineappleFreeze": {
         "instructions": ["Add all ingredients to cocktail shaker", "Shake until combined and ice mostly incoporated", "Pour into glass"],
         "ingredients": ["Ice Cubes", "of Sugar Syrup", "of Rum", "of Lime Juice", "of Pineapple Juice"],
-        "quantities": ["3", "1 tsp", "2 Shots", "1 Shot", "4 Shots"],
-        "quantityMetric": [],
+        "quantities": [3, 1, 2, 1, 4],
+        "unit": ["", "tsp", "Shots", "Shots", "Shots"],
         "link": "./Cocktails/pineapple-freeze",
         "name": "Pineapple Freeze",
         "tags": ["cocktail"]
@@ -39,8 +38,8 @@
     "strawberryDaiquiri": {
         "instructions": ["Add all ingredients to blender", "Blend until combined", "Pour into glass"],
         "ingredients": ["Ice Cubes", "Frozen Strawberreis", "of Sugar Syrup", "of Rum", "of Lemon Juice", "of Lemonade"],
-        "quantities": ["3", "8", "1 tsp", "2-4 Shots", "Squirt", "4 Shots"],
-        "quantityMetric": [],
+        "quantities": [3, 8, 1, 3, 1, 4],
+        "unit": ["", "", "tsp", "Shots", "Squirt", "Shots"],
         "link": "./Cocktails/strawberry-daq",
         "name": "Strawberry Daiquiri",
         "tags": ["cocktail"]
@@ -49,7 +48,7 @@
         "instructions": ["Set oven to 230&deg;c", "Chop butter and chocolate into small chunks and melt in double boiler", "Add sugar, 2 large eggs and 2 large egg yolks to mixer", "Mix sugar and eggs until fluffy and doubled in size", "Add salt and flour to melted chocoalte butter mix", "Fold box mixtures togehter", "Divide mixture into 4 buttered ramekins", "Bake in oven at 230&deg;c for 8 mins until top is set", "Let cool before serving onto a plate"],
         "ingredients": ["of Butter", "of Bittersweet Chocolate", "of Granulated Sugar", "Large Eggs", "of Salt", "of Plain Flower"],
         "quantities": ["113g", "168g", "50g", "4", "Pinch", "2 tbsp"],
-        "quantityMetric": [],
+        "unit": [],
         "link": "./Desserts/chocolate-lava",
         "name": "Chocolate Lava Cake",
         "tags": ["dessert"]
@@ -58,7 +57,7 @@
         "instructions": ["Cream together butter and sugars in stand mixer", "Beat in eggs and vanilla extract", "Add all dry ingredients and mix till combined", "Add chocolate chips and mix till combined", "Add salt and flour to melted chocoalte butter mix", "Use spoon or ice cream scoop to sererate into even balls", "Let balls set in fridge before moving into resealable bags", "Bake in oven at 190&deg;c for 12-15 mins or until top is browning", "Serve and eat whilst warm"],
         "ingredients": ["of Butter", "of Bittersweet Chocolate/Chocolate Chips", "of Granulated Sugar", "of Light Brown Sugar", "of Plain Flour", "of Vanilla Extract", "of Bicarbonate of Soda", "of Baking Powder", "of Salt", "Large Eggs"],
         "quantities": ["227g", "396g", "232g", "213g", "410g", "2 tsp", "1 tsp", "0.5 tsp", "1 tsp", "2"],
-        "quantityMetric": [],
+        "unit": [],
         "link": "./Desserts/cookie",
         "name": "Cookies",
         "tags": ["dessert"]
@@ -67,7 +66,7 @@
         "instructions": ["Mix ingredients till fully combined", "Cover hot frying pan in thin layer", "Flip once top is set then fry till golden brown", "Serve with desired toppings"],
         "ingredients": ["of Plain Flour", "Large Eggs", "of Milk", "of Salt"],
         "quantities": ["100g", "2", "300ml", "Pinch"],
-        "quantityMetric": [],
+        "unit": [],
         "link": "./Desserts/crepes",
         "name": "Crepes",
         "tags": ["dessert"]

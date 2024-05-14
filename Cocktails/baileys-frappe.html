@@ -1,75 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Bailey's Coffee Frappe</title>
+  <title>Bailey's Coffee Frappe</title>
+  <script src="../darkmode.js"></script>
 </head>
+
 <body>
 
-<link href="../styles.css" rel="stylesheet" type="text/css">
+  <link href="../styles.css" rel="stylesheet" type="text/css">
 
-<h1>Bailey's Coffee Frappe</h1>
-<hr>
-<h3>Makes 1 serving</h3> 
+  <h1>Bailey's Coffee Frappe</h1>
+  <hr>
+  <h3>Makes 1 serving</h3>
 
-<table id="table-wrapper">
-  <td>
-    <fieldset id="ingredients-fieldset">
-      <legend>Ingredients</legend>
-    </fieldset>
-  </td>
-  <td>
-    <fieldset>
-      <legend>Instructions</legend>
-      <ol id="instructions-list">
-      </ol>
-    </fieldset>
-  </td>
-</table>
+  <table id="table-wrapper">
+    <td>
+      <fieldset id="ingredients-fieldset">
+        <legend>Ingredients</legend>
+      </fieldset>
+    </td>
+    <td>
+      <fieldset>
+        <legend>Instructions</legend>
+        <ol id="instructions-list">
+        </ol>
+      </fieldset>
+    </td>
+  </table>
 
+  <script id="data-input" recipe-name="baileysFrappe" src="../dataFiller.js"></script>
 
+  <a class="return-cocktails-button" href="../cocktails">cocktails</a>
+  <a class="return-recipes-button" href="./">recipes</a>
 
-<script>
-  const listEl = document.querySelector("#ingredients-fieldset")
-  fetch('../recipes.json')
-      .then(res => res.json())
-      .then(data => {
-        for (let i=0; i<data.baileysFrappe.ingredients.length; i++) {
-          listEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.baileysFrappe.quantities[i]} ${data.baileysFrappe.unit[i]} ${data.baileysFrappe.ingredients[i]}</span></div>`)
-        }
-      }
-      )
-</script>
-
-
-
-<script>
-  const listEl1 = document.querySelector("#instructions-list")
-  
-  fetch('../recipes.json')
-      .then(res => res.json())
-      .then(data => {
-        for (let i=0; i<data.baileysFrappe.instructions.length; i++) {
-          listEl1.insertAdjacentHTML("beforeend", `<li>${data.baileysFrappe.instructions[i]}</li>`)
-        }
-      }
-      )
-</script>
-
-
-<a class="return-cocktails-button" href="../cocktails">cocktails</a>
-<a class="return-recipes-button" href="./">recipes</a>
-
-<label class="switch">
+  <label class="switch">
     <input type="checkbox" onchange="darkMode()">
     <span class="slider round"></span>
-</label>
-
-<script>
-function darkMode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
+  </label>
 
 </body>
+
 </html>

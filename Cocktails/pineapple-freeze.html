@@ -1,72 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Bailey's Coffee Frappe</title>
+  <title>Bailey's Coffee Frappe</title>
+  <script src="../darkmode.js"></script>
 </head>
+
 <body>
 
-<link href="../styles.css" rel="stylesheet" type="text/css">
+  <link href="../styles.css" rel="stylesheet" type="text/css">
 
-<h1>Pineapple Freeze</h1>
-<hr>
-<h3>Pineapple Freeze</h3>
+  <h1>Pineapple Freeze</h1>
+  <hr>
+  <h3>Pineapple Freeze</h3>
 
-<table id="table-wrapper">
-  <td>
-    <fieldset id="ingredients-fieldset">
-      <legend>Ingredients</legend>
-    </fieldset>
-  </td>
-  <td>
-    <fieldset>
-      <legend>Instructions</legend>
-      <ol id="instructions-list">
-      </ol>
-    </fieldset>
-  </td>
-</table>
+  <table id="table-wrapper">
+    <td>
+      <fieldset id="ingredients-fieldset">
+        <legend>Ingredients</legend>
+      </fieldset>
+    </td>
+    <td>
+      <fieldset>
+        <legend>Instructions</legend>
+        <ol id="instructions-list">
+        </ol>
+      </fieldset>
+    </td>
+  </table>
 
-<script>
-  const listEl = document.querySelector("#ingredients-fieldset")
+  <script id="data-input" recipe-name="pineappleFreeze" src="../dataFiller.js"></script>
 
-  fetch('../recipes.json')
-      .then(res => res.json())
-      .then(data => {
-        for (let i=0; i<data.pineappleFreeze.ingredients.length; i++) {
-          listEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.pineappleFreeze.quantities[i]} ${data.pineappleFreeze.ingredients[i]}</span></div>`)
-        }
-      }
-      )
-</script>
+  <a class="return-cocktails-button" href="../cocktails">cocktails</a>
+  <a class="return-recipes-button" href="./">recipes</a>
 
-<script>
-  const listEl1 = document.querySelector("#instructions-list")
-  
-  fetch('../recipes.json')
-      .then(res => res.json())
-      .then(data => {
-        for (let i=0; i<data.pineappleFreeze.instructions.length; i++) {
-          listEl1.insertAdjacentHTML("beforeend", `<li>${data.pineappleFreeze.instructions[i]}</li>`)
-        }
-      }
-      )
-</script>
-
-
-<a class="return-cocktails-button" href="../cocktails">cocktails</a>
-<a class="return-recipes-button" href="./">recipes</a>
-
-<label class="switch">
+  <label class="switch">
     <input type="checkbox" onchange="darkMode()">
     <span class="slider round"></span>
-</label>
-
-<script>
-function darkMode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
+  </label>
 
 </body>
+
 </html>

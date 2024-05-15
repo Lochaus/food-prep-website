@@ -1,17 +1,14 @@
 const listEl = document.querySelector("#ingredients-fieldset")
 const listEl1 = document.querySelector("#instructions-list")
 var recipe = document.getElementById("data-input").getAttribute("recipe-name")
-var normalServings = document.getElementById("servings").innerText
-var desiredServings = document.getElementById("servings").innerText
-console.log(servings)
-
+var normalServings = document.getElementById("servings").value
+var desiredServings = document.getElementById("servings").value
 
 window.onload = function () {
-    loadRecipe(desiredServings)
+    loadRecipe(false)
 }
 
-function loadRecipe(desiredServings) {
-    desiredServings = desiredServings
+function loadRecipe() {
     listEl.innerHTML = ""
     listEl1.innerHTML = ""
     fetch('../recipes.json')
@@ -34,9 +31,8 @@ function loadRecipe(desiredServings) {
         )
 }
 
-var form = document.getElementById('form');
-number = document.getElementById('number');
-form.onsubmit = function () {
-    desiredServings = number.value;
-    loadRecipe(4)
+function changeServings(e) {
+    e.preventDefault()
+    desiredServings = document.getElementById("servings").value
+    loadRecipe()
 }

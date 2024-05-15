@@ -1,105 +1,108 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Pizza</title>
+  <title>Pizza</title>
 </head>
+
 <body>
 
-<link href="../styles.css" rel="stylesheet" type="text/css">
-  
-<h1>Pizza</h1>
-<hr>
-<h3>Makes 1 serving</h3>
+  <link href="../styles.css" rel="stylesheet" type="text/css">
 
-<table id="table-wrapper">
-  <td>
-    <fieldset id="ingredients-fieldset">
-      <legend>Dough Ingredients</legend>
-    </fieldset>
-    <fieldset id="toppings-fieldset">
-      <legend>Toppings</legend>
-    </fieldset>
-    <fieldset id="optional-toppings-fieldset">
-      <legend>Opitonal Toppings</legend>
-    </fieldset>
-  </td>
-  <td>
-    <fieldset>
-      <legend>Instructions</legend>
-      <ol id="instructions-list">
-      </ol>
-    </fieldset>
-  </td>
-</table>
+  <h1>Pizza</h1>
+  <hr>
+  <h3>Makes 1 serving</h3>
+
+  <table id="table-wrapper">
+    <td>
+      <fieldset id="ingredients-fieldset">
+        <legend>Dough Ingredients</legend>
+      </fieldset>
+      <fieldset id="toppings-fieldset">
+        <legend>Toppings</legend>
+      </fieldset>
+      <fieldset id="optional-toppings-fieldset">
+        <legend>Opitonal Toppings</legend>
+      </fieldset>
+    </td>
+    <td>
+      <fieldset>
+        <legend>Instructions</legend>
+        <ol id="instructions-list">
+        </ol>
+      </fieldset>
+    </td>
+  </table>
 
 
-<script>
-  const ingredientsFieldsetEl = document.querySelector("#ingredients-fieldset")
+  <script>
+    const ingredientsFieldsetEl = document.querySelector("#ingredients-fieldset")
 
-  fetch('../recipes.json')
+    fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
-        for (let i=0; i<data.pizza.ingredientDough.length; i++) {
+        for (let i = 0; i < data.pizza.ingredientDough.length; i++) {
           ingredientsFieldsetEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.pizza.quantityDough[i]} ${data.pizza.ingredientDough[i]}</span></div>`)
         }
       }
       )
-</script>
+  </script>
 
-<script>
-  const toppingsFieldsetEl = document.querySelector("#toppings-fieldset")
+  <script>
+    const toppingsFieldsetEl = document.querySelector("#toppings-fieldset")
 
-  fetch('../recipes.json')
+    fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
-        for (let i=0; i<data.pizza.toppings.length; i++) {
+        for (let i = 0; i < data.pizza.toppings.length; i++) {
           toppingsFieldsetEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.pizza.toppings[i]}</span></div>`)
         }
       }
       )
-</script>
+  </script>
 
-<script>
-  const optionalTopFieldsetEl = document.querySelector("#optional-toppings-fieldset")
+  <script>
+    const optionalTopFieldsetEl = document.querySelector("#optional-toppings-fieldset")
 
-  fetch('../recipes.json')
+    fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
-        for (let i=0; i<data.pizza.optionalToppings.length; i++) {
+        for (let i = 0; i < data.pizza.optionalToppings.length; i++) {
           optionalTopFieldsetEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.pizza.optionalToppings[i]}</span></div>`)
         }
       }
       )
-</script>
+  </script>
 
-<script>
-  const instructionsEl = document.querySelector("#instructions-list")
-  
-  fetch('../recipes.json')
+  <script>
+    const instructionsEl = document.querySelector("#instructions-list")
+
+    fetch('../recipes.json')
       .then(res => res.json())
       .then(data => {
-        for (let i=0; i<data.pizza.instructions.length; i++) {
+        for (let i = 0; i < data.pizza.instructions.length; i++) {
           instructionsEl.insertAdjacentHTML("beforeend", `<li>${data.pizza.instructions[i]}</li>`)
         }
       }
       )
-</script>
+  </script>
 
 
-<a class="return-cocktails-button" href="../dinners">dinners</a>
-<a class="return-recipes-button" href="../">recipes</a>
+  <a class="return-cocktails-button" href="../dinners">dinners</a>
+  <a class="return-recipes-button" href="../">recipes</a>
 
-<label class="switch">
+  <label class="switch">
     <input type="checkbox" onchange="darkMode()">
     <span class="slider round"></span>
-</label>
+  </label>
 
-<script>
-function darkMode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
+  <script>
+    function darkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
 
 </body>
+
 </html>

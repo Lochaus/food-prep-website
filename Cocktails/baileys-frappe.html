@@ -12,18 +12,18 @@
 
   <h1>Bailey's Coffee Frappe</h1>
   <hr>
-  <h3>Makes <span id="servings">1</span> serving</h3>
+  <h3>Makes <input id="servings" type="number" min="1" name="number" value="1"> servings</h3>
+  <div id="button-container">
+    <button id="change-servings" onclick="changeServings(event)">Change Servings</button>
+  </div>
+  
 
-  <form id="form">
-    <input id="number" type="number" min="1" name="number">
-    <button>Submit</button>
-  </form>
 
   <table id="table-wrapper">
     <td>
       <fieldset>
         <legend>Ingredients</legend>
-        <span id="ingredients-fieldset"></span>
+        <div id="ingredients-fieldset"></div>
       </fieldset>
     </td>
     <td>

@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Cocktails</title>
+  <title>Cocktails</title>
 </head>
+
 <body>
 
-<link href="./styles.css" rel="stylesheet" type="text/css">
+  <link href="./styles.css" rel="stylesheet" type="text/css">
 
-<h1><u>Cocktails</u></h1>
-<div class="grid-container" id="recipes-grid">
-</div>
+  <h1><u>Cocktails</u></h1>
+  <div class="grid-container" id="recipes-grid">
+  </div>
 
-<script>
-  const recipeEl = document.querySelector("#recipes-grid")
-  fetch('./recipes.json')
-    .then(res => res.json())
-    .then(data => {
-      for (const [key, value] of Object.entries(data)) {
-        if (value.tags.includes("cocktail")) {
-          recipeEl.insertAdjacentHTML("beforeend", `<div class="grid-item"><a href=${value.link}>${value.name}</a></div>`)
+  <script>
+    const recipeEl = document.querySelector("#recipes-grid")
+    fetch('./recipes.json')
+      .then(res => res.json())
+      .then(data => {
+        for (const [key, value] of Object.entries(data)) {
+          if (value.tags.includes("cocktail")) {
+            recipeEl.insertAdjacentHTML("beforeend", `<div class="grid-item"><a href=${value.link}>${value.name}</a></div>`)
+          }
         }
-      }
-      console.log(Object.keys(data))
-    })
-</script>
+        console.log(Object.keys(data))
+      })
+  </script>
 
-<label class="switch">
+  <label class="switch">
     <input type="checkbox" onchange="darkMode()">
     <span class="slider round"></span>
-</label>
+  </label>
 
-<a class="return-recipes-button" href="./">recipes</a>
+  <a class="return-recipes-button" href="./">recipes</a>
 
-<script>
-function darkMode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
+  <script>
+    function darkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
 
 
-</script>
+  </script>
 
 </body>
-</html>
 
+</html>

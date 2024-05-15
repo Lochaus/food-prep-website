@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Other Recipes</title>
+  <title>Other Recipes</title>
 </head>
+
 <body>
 
-<link href="./styles.css" rel="stylesheet" type="text/css">
+  <link href="./styles.css" rel="stylesheet" type="text/css">
 
-<h1><u>Other Recipes</u></h1>
-<div class="grid-container" id="recipes-grid">
-</ul>
+  <h1><u>Other Recipes</u></h1>
+  <div class="grid-container" id="recipes-grid">
+    </ul>
 
-<script>
-  const recipeEl = document.querySelector("#recipes-grid")
-  fetch('./recipes.json')
-    .then(res => res.json())
-    .then(data => {
-      for (const [key, value] of Object.entries(data)) {
-        if (value.tags.includes("other")) {
-          recipeEl.insertAdjacentHTML("beforeend", `<div class="grid-item"><a href=${value.link}>${value.name}</a></div>`)
-        }
+    <script>
+      const recipeEl = document.querySelector("#recipes-grid")
+      fetch('./recipes.json')
+        .then(res => res.json())
+        .then(data => {
+          for (const [key, value] of Object.entries(data)) {
+            if (value.tags.includes("other")) {
+              recipeEl.insertAdjacentHTML("beforeend", `<div class="grid-item"><a href=${value.link}>${value.name}</a></div>`)
+            }
+          }
+          console.log(Object.keys(data))
+        })
+    </script>
+
+    <a class="return-recipes-button" href="./">recipes</a>
+
+    <label class="switch">
+      <input type="checkbox" onchange="darkMode()">
+      <span class="slider round"></span>
+    </label>
+
+    <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
       }
-      console.log(Object.keys(data))
-    })
-</script>
-
-<a class="return-recipes-button" href="./">recipes</a>
-
-<label class="switch">
-    <input type="checkbox" onchange="darkMode()">
-    <span class="slider round"></span>
-</label>
-
-<script>
-function darkMode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
 
 
-</script>
+    </script>
 
 </body>
-</html>
 
+</html>

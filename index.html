@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Lochlan's Recipes</title>
+  <title>Lochlan's Recipes</title>
 </head>
+
 <body>
 
-<link href="./styles.css" rel="stylesheet" type="text/css">
+  <link href="./styles.css" rel="stylesheet" type="text/css">
 
-<h1><u>Lochlan's Recipes</u></h1>
-<div class="grid-container">
-  <div class="grid-item"><a href="./dinners" target="_self">Dinners</a></div>
-  <div class="grid-item"><a href="./desserts" target="_self">Desserts</a></div>
-  <div class="grid-item"><a href="./cocktails" target="_self">Cocktails</a></div>
-  <div class="grid-item"><a href="./other" target="_self">Other</a></div>
-</div>
+  <h1><u>Lochlan's Recipes</u></h1>
+  <div class="grid-container">
+    <div class="grid-item"><a href="./dinners" target="_self">Dinners</a></div>
+    <div class="grid-item"><a href="./desserts" target="_self">Desserts</a></div>
+    <div class="grid-item"><a href="./cocktails" target="_self">Cocktails</a></div>
+    <div class="grid-item"><a href="./other" target="_self">Other</a></div>
+  </div>
 
 
-<label class="switch">
+  <label class="switch">
     <input type="checkbox" onchange="darkMode()">
     <span class="slider round"></span>
-</label>
+  </label>
 
-<script>
-function darkMode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
+  <script>
+    function darkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
 
 
-</script>
+  </script>
 
 </body>
-</html>
 
+</html>

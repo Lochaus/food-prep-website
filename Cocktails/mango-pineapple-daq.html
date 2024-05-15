@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Mango Pineapple Daiquiri</title>
+  <title>Mango and Pineapple Daiquiri</title>
   <script src="../darkmode.js"></script>
 </head>
 
@@ -10,14 +10,20 @@
 
   <link href="../styles.css" rel="stylesheet" type="text/css">
 
-  <h1>Mango Pineapple Daiquiri</h1>
+  <h1>Mango and Pineapple Daiquiri</h1>
   <hr>
-  <h3>Makes 1 serving</h3>
+  <h3>Makes <input id="servings" type="number" min="1" name="number" value="1"> servings</h3>
+  <div id="button-container">
+    <button id="change-servings" onclick="changeServings(event)">Change Servings</button>
+  </div>
+
+
 
   <table id="table-wrapper">
     <td>
-      <fieldset id="ingredients-fieldset">
+      <fieldset>
         <legend>Ingredients</legend>
+        <div id="ingredients-fieldset"></div>
       </fieldset>
     </td>
     <td>
@@ -38,6 +44,7 @@
     <input type="checkbox" onchange="darkMode()">
     <span class="slider round"></span>
   </label>
+
 </body>
 
 </html>

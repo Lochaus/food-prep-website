@@ -163,5 +163,14 @@
         "link": "./Desserts/brownie",
         "name": "Brownies",
         "tags": ["dessert"]
+    },
+    "hummus": {
+        "instructions": ["Add the 200g of dried chickpeas and cover with plenty of cold water and soak overnight", "Drain the old water then add the chickpeas to a pot with cold water and bring to a boil", "Simmer for 30 mintes then check that the chickpeas are soft", "Once the chickpease are soft pour off the hot water and fill with cold water and mix the chickpeas to losten the skins", "The skins should float to the top and you can pour out the water making sure to not lose any chickpeas", "Repeat this stage until most of the skins are gone", "Add the chickpeas to a food processor and blend until smooth", "Add the garlic, lemon juice, cumin, paprika and tahini", "Blend again and slowly at the cold water until smooth", "Pour out onto a plate and top with olive oil and paprika"],
+        "ingredients": ["of Dried Chickpeas", "of Tahini", "of Salt", "of Bicarbonate of Soda", "of Garlic", "of Lemon Juice", "of Ground Cumin", "of Paprika", "Cold Water"],
+        "quantities": [200, 85, 1.5, 0.5, 2, 80, 0.5, 0.5, 60],
+        "unit": ["g", "g", "tsp", "tsp", "Cloves", "ml", "tsp", "tsp", "ml"],
+        "link": "./Other/hummus",
+        "name": "Hummus",
+        "tags": ["other"]
     }
 }

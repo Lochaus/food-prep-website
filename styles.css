@@ -301,8 +301,10 @@ fieldset input[type=checkbox]:checked+span {
 }
 
 #table-wrapper {
-    margin-left: 16%;
-    width: 75%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    table-layout: fixed;
 }
 
 td {
@@ -318,4 +320,14 @@ hr {
 
 #button-container {
     text-align: center;
+    padding-bottom: 15px;
+}
+
+#ingredients-column {
+    width: 35%;
+
+}
+
+#instructions-column {
+    width: 65%;
 }

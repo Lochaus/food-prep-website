@@ -2,24 +2,31 @@
 <html>
 
 <head>
-  <title>Broccoli Macaroni Cheese</title>
+  <title>Brocolli Macaroni Cheese</title>
+  <script src="../darkmode.js"></script>
 </head>
 
 <body>
 
   <link href="../styles.css" rel="stylesheet" type="text/css">
 
-  <h1>Broccoli Macaroni Cheese</h1>
+  <h1>Brocolli Macaroni Cheese</h1>
   <hr>
-  <h3>Makes 1 serving</h3>
+  <h3>Makes <input id="servings" type="number" min="1" name="number" value="6"> servings</h3>
+  <div id="button-container">
+    <button id="change-servings" onclick="changeServings(event)">Change Servings</button>
+  </div>
+
+
 
   <table id="table-wrapper">
-    <td>
-      <fieldset id="ingredients-fieldset">
+    <td id="ingredients-column">
+      <fieldset>
         <legend>Ingredients</legend>
+        <div id="ingredients-fieldset"></div>
       </fieldset>
     </td>
-    <td>
+    <td id="instructions-column">
       <fieldset>
         <legend>Instructions</legend>
         <ol id="instructions-list">
@@ -28,32 +35,7 @@
     </td>
   </table>
 
-  <script>
-    const listEl = document.querySelector("#ingredients-fieldset")
-
-    fetch('../recipes.json')
-      .then(res => res.json())
-      .then(data => {
-        for (let i = 0; i < data.broccoliMacaroniCheese.ingredients.length; i++) {
-          listEl.insertAdjacentHTML("beforeend", `<div><input type="checkbox"><span>${data.broccoliMacaroniCheese.quantities[i]} ${data.broccoliMacaroniCheese.ingredients[i]}</span></div>`)
-        }
-      }
-      )
-  </script>
-
-  <script>
-    const listEl1 = document.querySelector("#instructions-list")
-
-    fetch('../recipes.json')
-      .then(res => res.json())
-      .then(data => {
-        for (let i = 0; i < data.broccoliMacaroniCheese.instructions.length; i++) {
-          listEl1.insertAdjacentHTML("beforeend", `<li>${data.broccoliMacaroniCheese.instructions[i]}</li>`)
-        }
-      }
-      )
-  </script>
-
+  <script id="data-input" recipe-name="broccoliMacaroniCheese" src="../dataFiller.js"></script>
 
   <a class="return-cocktails-button" href="../dinners">dinners</a>
   <a class="return-recipes-button" href="../">recipes</a>
@@ -62,13 +44,6 @@
     <input type="checkbox" onchange="darkMode()">
     <span class="slider round"></span>
   </label>
-
-  <script>
-    function darkMode() {
-      var element = document.body;
-      element.classList.toggle("dark-mode");
-    }
-  </script>
 
 </body>
 

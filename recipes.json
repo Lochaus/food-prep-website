@@ -74,8 +74,8 @@
     "broccoliMacaroniCheese": {
         "instructions": ["Cook pasta till al dente and add in broccoli florets for last few minutes", "Drain and set aside pasta and broccoli", "Saute garlic in olive oil for a few minutes until browned", "Add flour until combined with oil", "Slowly whisk in vegetable/chicken stock until smooth", "Add milk and cook until mixture simmers", "Add cheese, salt and pepper and mix till cheese is melted", "Mix together cheese and pasta mixutre", "Add to a baking tray and top with cheese and breadcrumbs", "Cook in oven at 180&deg;c for 20 minutes or place in fridge freezer for later cooking", "If refrigerated, cook at 180&deg;c for 30 minutes"],
         "ingredients": ["of Dry Pasta", "Bunch of Brocooli", "of Olive Oil", "Cloves of Garlic", "of Flour", "of Vegetable/Chicken Stock", "of Milk", "of Grated Cheese", "of Salt", "of Pepper", "of Cooked Chicken Thighs", "of Cheese", "Panko Bread Crumbs"],
-        "quantities": ["450g", "1", "2 tbsp", "3", "3 tbsp", "250ml", "250ml", "300g", "0.5 tsp", "1 tsp", "300g", "50g", "Some"],
-        "quantityMetric": [],
+        "quantities": [450, 1, 2, 3, 3, 250, 250, 300, 0.5, 1, 300, 50, 50],
+        "unit": ["g", "", "tbsp", "", "tbsp", "ml", "ml", "g", "tsp", "tsp", "g", "g", "g"],
         "link": "./Dinners/broc-mac-cheese",
         "name": "Broccoli Macaroni Cheese",
         "tags": ["dinner"]
@@ -83,19 +83,19 @@
     "makhaniSauce": {
         "instructions": ["Take 15g garlic and finely dice it. Warm a large saucepan over a medium-high heat and add the oil. Toss in the chopped garlic and fry until light golden brown and slightly crispy, about 7–8 minutes. Remove with a slotted spoon and drain on kitchen paper.", "Grate the remaining garlic and the ginger to a fine paste on a microplane, or grind using a pestle and mortar", "Using a blender, blitz the chopped tomatoes to a fine consistency.", "Place the saucepan containing the oil back over a medium-high heat and add the bay leaves, green and black cardamom pods and the cinnamon sticks. Let them crackle for 1 minute, stirring regularly.", "Turn the heat down and add the garlic and ginger paste. Cook for 5 minutes, allowing the paste to brown but not burn.", "Add the tomatoes, salt and chilli powder to the pan. Bring to a rapid simmer and cook until reduced by half, stirring regularly so that it doesn’t catch. This should take about 30 minutes.", "Add the butter and simmer for a further 5 minutes.", "Add the garam masala, sugar, honey, cumin, crispy garlic, dried fenugreek and fresh dill fonds and cook for a further 15 minutes.", "If the sauce is to be used straight away, add the cream and simmer gently for 5 minutes; it is then ready to use. If not using immediately, allow to cool, cover and refrigerate; add the cream when you reheat the sauce to assemble your dish."],
         "ingredients": ["of Garlic", "of Ginger", "of Vegetable Oil", "of Chopped Tomatoes", "Bay Leaves", "Green Cardamon Pods", "Black Cardamon Pods", "of Salt", "of Deggi Mirch Chilli Powder", "of Butter", "of Garam Masala", "of Sugar", "of Honey", "of Ground Cumin", "of Fenugreek Leaves", "of Dill", "of Double Cream"],
-        "quantities": ["35g", "20g", "175ml", "800g", "2", "6", "2", "2 tsp", "1.5 tsp", "30g", "1 tsp", "20g", "1 tbsp", "1 tsp", "1 tsp", "0.5 tsp", "80ml"],
+        "quantities": [35, 20, 175, 800, 2, 6, 2, 2, 1.5, 30, 1, 20, 1, 1, 1, 0.5, 80],
         "quantityMetric": [],
+        "unit": ["g", "g", "ml", "g", "", "", "", "tsp", "tsp", "g", "tsp", "g", "tbsp", "tsp", "tsp", "tsp", "ml"],
         "link": "./Dinners/makhani-sauce",
         "name": "Makhani Sauce",
         "tags": ["dinner"]
     },
     "pizza": {
-        "instructions": ["Heat water in microwave till warm (≈38&deg;c)", "Mix in sugar and yeast and wait until starts foaming", "Add flour, yeast water, olive oil and salt to bowl and mix", "Add extra flour as needed to prevent dough from being too sticky", "Knead till dough can be stretch thinly without tearing", "Add dough to a bowl greased with olive oil and cover with plastic wrap leave for at least 8 hours or overnight in fridge", "Split dough into 4-6 balls", "Shape dough into balls then let rest on a baking tray", "Heat oven to max temperature with a pizza stone/steel for at least an hour", "Form dough into pizza shape", "Add pizza sauce and cheese then any other extra toppings", "Transfer into oven using a pizza peel (can be easier if dough is on baking paper)", "Cook in oven until cheese is browned, turn half way"],
-        "ingredientDough": ["of Warm Water", "of Sugar", "of Instant Yeast", "of Olive Oil", "of Salt", "of Bread Flour"],
-        "quantityDough": ["530ml", "12g", "9g", "27g", "18g", "700-1000g"],
+        "instructions": ["Add the water and flour to a bowl and mix until combined then cover in plastic wrap set aside for 2 hours", "Flatten out onto work surface then sprinkle the yeast oven and kneed in for 4 minutes", "Flatten out the dough onto the work surface again and add the salt over and kneed for another 4 minutes", "Place in a baking tray and strech and fold oven in all 4 directions", "Leave the dough for 30 minutes covered then repeat folding over step", "Repeat 3 times every 30 minutes", "Ball the dough up and place in air tight container and place in fridge and use within 1 week", "To cook pizza heat oven to max temperature with a pizza stone and leave for at least 1 hour", "Take out dough ball and place in bowl of semolina", "Turn out onto work surface covered in semolina and work the dough into pizza shape", "Add the tomato sauce then transfer into oven with pizza peel for a few minutes", "Take out of oven then add cheese and other toppings", "Cook pizza until crust is crispy and cheese is browned"],
+        "ingredients": ["of 00 Pizza Flour", "of Water", "of Instant Yeast", "of Salt", "of Pizza Sauce", "of Mozzarella Cheese"],
+        "quantities": [500, 300, 2, 12, 1, 500],
+        "unit": ["g", "g", "g", "g", "can", "g"],
         "toppings": ["Pizza Sauce", "Mozzarella"],
-        "optionalToppings": ["Red Onion", "Chorizo", "Precooked Chicken", "Chillies or Jalapeños" , "Chillie Oil", "Peppers", "Basil", "Pineapple"],
-        "quantityMetric": [],
         "link": "./Dinners/pizza",
         "name": "Pizza",
         "tags": ["dinner"]
@@ -103,19 +103,23 @@
     "porkJoint": {
         "instructions": ["24 hours before cooking cover the skin of the crackling with salt to dry out and put in rack in fridge overnight", "Preheat oven to 230&deg;c and whilst the oven warms brush off all old salt off the skin", "Season the pork then brush some vegetable oil on the skin then place in the oven", "Cook for 30 minutes then reduce the temperature to 180&deg;c and cook till internal temperature reaches 65&deg;c"],
         "ingredients": ["Pork Crackling Joint", "Salt"],
-        "quantities": ["0.5-1.5kg", "Some"],
+        "quantities": [1.5, 50],
         "quantityMetric": [],
+        "unit": ["kg", "g"],
         "link": "./Dinners/pork-joint",
         "name": "Pork Joint",
         "tags": ["dinner"]
     },
     "rubyChicken": {
-        "instructions": ["For the marinade, blitz the ingredients together in a blender to a smooth paste. Transfer to a bowl.", "Cut the chicken into 4cm chunks. Add to the marinade and turn to coat. Cover and leave to marinate in the fridge for 6–24 hours.", "Heat the grill to medium-high. Place the marinated chicken on a rack in the grill pan, brush with the melted butter and grill for 8–10 minutes, until cooked through and nicely charred.", "Warm a large saucepan over a medium-low heat. Add the makhani sauce, cream and grilled chicken and simmer very gently for 10 minutes.", "Serve the curry garnished with ginger matchsticks, chopped coriander and pomegranate seeds, with a bowl of steamed rice on the side."],
+        "instructions": ["For the marinade, add all the ingredients apart from the makahani sauce, chicken and cream and blitz them together. Transfer to a bowl.", "Cut the chicken into 4cm chunks. Add to the marinade and turn to coat. Cover and leave to marinate in the fridge for 6–24 hours.", "Heat the grill to medium-high. Place the marinated chicken on a rack in the grill pan, brush with the melted butter and grill for 8–10 minutes, until cooked through and nicely charred.", "Warm a large saucepan over a medium-low heat. Add the makhani sauce, cream and grilled chicken and simmer very gently for 10 minutes.", "Serve the curry garnished with ginger matchsticks, chopped coriander and pomegranate seeds, with a bowl of steamed rice on the side."],
         "mainIngredient": ["of Makhani Sauce", "of Chicken Thighs", "of Double Cream"],
         "marinadeIngredient": ["of Ginger", "of Garlic", "of Salt", "of Deggi Mirch Chilli Powder", "of Ground Cumin", "of Garam Masala", "of Lime Juice", "of Vegetable Oil", "of Greek Yoghurt"],
         "quantityMain": ["1 Quantity", "700g", "50ml"],
         "quantityMarinade": ["10g", "20g", "5g", "1 tsp", "1.5 tsp", "0.5 tsp", "2 tsp", "2 tsp", "75g"],
         "quantityMetric": [],
+        "ingredients": ["of Makhani Sauce", "of Chicken Thighs", "of Double Cream", "of Ginger", "of Garlic", "of Salt", "of Deggi Mirch Chilli Powder", "of Ground Cumin", "of Garam Masala", "of Lime Juice", "of Vegetable Oil", "of Greek Yoghurt"],
+        "quantities": [1, 700, 50, 10, 20, 5, 1, 1.5, 0.5, 2, 2, 75],
+        "unit": ["Quantity", "g", "ml", "g", "g", "g", "tsp", "tsp", "tsp", "tsp", "tsp", "g"],
         "link": "./Dinners/ruby-chicken",
         "name": "Ruby Chicken",
         "tags": ["dinner"]
@@ -123,8 +127,9 @@
     "baguette": {
         "instructions": ["Bloom the yeast in the water to make sure it is alive", "Add the yeast, water and flour to a stand mixer and mix on low speed for 4 minutes", "After 4 minutes turn the speed up slightly and slowly add the salt and mix for 4 more minutes", "Turn dough out onto table and form into a tight ball before placing in flowered bowl to rise", "Allow to rise for an hour then place in the fridge overnight", "Seperate dough into 6-12 portions", "Form into baguette shapes then place on flowered kitchen towel", "Heat oven to 230&deg;c", "Add 150ml of boiling water to oven then place a baguettte in and cook till golden brown", "Repeat for all baguettes"],
         "ingredients": ["of Strong Bread Flour", "of Dried Yeast", "of Water", "of Sea Salt"],
-        "quantities": ["1000g", "10g", "700g", "20g"],
+        "quantities": [1000, 10, 700, 20],
         "quantityMetric": ["3", "100ml", "100ml", "15ml", "5g"],
+        "unit": ["g", "g", "g", "g"],
         "link": "./Other/baguette",
         "name": "Baguette",
         "tags": ["other"]
@@ -132,8 +137,8 @@
     "togarashiMayonnaise": {
         "instructions": ["Add all ingredients to a bowl and stir till combined", "Leave in bowl for dipping or transfer to squirt bottle"],
         "ingredients": ["of Mayonnaise", "of Shichimi Togarashi", "of Rice Vinegar", "of Sesame Oil"],
-        "quantities": ["1 cup", "1 tbsp", "2 tsp", "0.5 tsp"],
-        "quantityMetric": ["3", "100ml", "100ml", "15ml", "5g"],
+        "quantities": [1, 1, 2, 0.5],
+        "unit": ["cup", "tbsp", "tsp", "tsp"],
         "link": "./Other/togarashi-mayo",
         "name": "Togarashi Mayonnaise",
         "tags": ["other"]
@@ -141,7 +146,8 @@
     "cottagePie": {
         "instructions": ["Heat 1 tbsp olive oil in a large saucepan and fry 1¼kg beef mince until browned – you may need to do this in batches. Set aside as it browns", "Put the other 2 tbsp olive oil into the pan, add 2 finely chopped onions, 3 chopped carrots and 3 chopped celery sticks and cook on a gentle heat until soft, about 20 mins", "Add 2 finely chopped garlic cloves, 3 tbsp plain flour and 1 tbsp tomato purée, increase the heat and cook for a few mins, then return the beef to the pan", "Pour over a large glass of red wine, if using, and boil to reduce it slightly before adding the 850ml beef stock, 4 tbsp Worcestershire sauce, a few thyme sprigs and 2 bay leaves", "Bring to a simmer and cook, uncovered, for 45 mins. By this time the gravy should be thick and coating the meat. Check after about 30 mins – if a lot of liquid remains, increase the heat slightly to reduce the gravy a little. Season well, then discard the bay leaves and thyme stalks", "Meanwhile, make the mash. In a large saucepan, cover the 1.8kg potatoes which you've peeled and chopped, in salted cold water, bring to the boil and simmer until tender", "Drain well, then allow to steam-dry for a few mins. Mash well with the 225ml milk, 25g butter, and three-quarters of the 200g strong cheddar cheese, then season with freshly grated nutmeg and some salt and pepper", "Spoon the meat into 2 ovenproof dishes. Pipe or spoon on the mash to cover. Sprinkle on the remaining cheese", "If eating straight away, heat oven to 220C/200C fan/gas 7 and cook for 25-30 mins, or until the topping is golden"],
         "ingredients": ["of Olive Oil", "of Beef Mince", "Onions", "Carrots", "Garlic Cloves", "of Plain Flour", "of Tomato Purée", "of Beef Stock", "of Worcestershire Sauce", "Thyme Sprigs", "Bay Leaves", "of Potatoes", "of Butter", "of Milk"],
-        "quantities": ["2 tbsp", "500g", "1", "2", "2", "2 tbsp", "1 tbsp", "425ml", "2 tbsp", "2", "2", "900g", "125ml", "20g"],
+        "quantities": [2, 500, 1, 2, 2, 2, 1, 425, 2, 2, 2, 900, 125, 20],
+        "unit": ["tbsp", "g", "", "", "", "tbsp", "tbsp", "ml", "tbsp", "", "", "g", "ml", "g"],
         "link": "./Dinners/cottage-pie",
         "name": "Cottage Pie",
         "tags": ["dinner"]
@@ -150,7 +156,7 @@
         "instructions": ["Add beef mince to hot pan and press flat until browned on one side, then flip over to cook other side", "Break up the mince into lots of small browned pieces then set aside", "Dice the onion and add to the pan deglasing with a bit of water when necessary", "After 5 minutes add the garlic and ginger then cook for a minute until fragrant", "Add in the mirin to help deglase the pan", "Add the dashi stock and the chicken stock and bring to a simmer", "Disolve 75g of miso paste into the soup", "Return the mince back to the pan and simmer for 10 minutes and season to taste"],
         "ingredients": ["of Beef Mince", "Onion", "Garlic Cloves", "of Grated Ginger", "Dashi Powder Stock", "of Chicken Stock", "of Miso Paste", "of Mirin"],
         "quantities": [500, 1, 4, 1, 900, 1800, 75, 1],
-        "units": ["g", "", "", "Inch Knob", "ml", "ml", "g", "Splash"],
+        "unit": ["g", "", "", "Inch Knob", "ml", "ml", "g", "Splash"],
         "link": "./Dinners/beef-miso-soup",
         "name": "Beef Miso Soup",
         "tags": ["dinner"]
@@ -165,7 +171,7 @@
         "tags": ["dessert"]
     },
     "hummus": {
-        "instructions": ["Add the 200g of dried chickpeas and cover with plenty of cold water and soak overnight", "Drain the old water then add the chickpeas to a pot with cold water and bring to a boil", "Simmer for 30 mintes then check that the chickpeas are soft", "Once the chickpease are soft pour off the hot water and fill with cold water and mix the chickpeas to losten the skins", "The skins should float to the top and you can pour out the water making sure to not lose any chickpeas", "Repeat this stage until most of the skins are gone", "Add the chickpeas to a food processor and blend until smooth", "Add the garlic, lemon juice, cumin, paprika and tahini", "Blend again and slowly at the cold water until smooth", "Pour out onto a plate and top with olive oil and paprika"],
+        "instructions": ["Add the dried chickpeas and cover with plenty of cold water and soak overnight", "Drain the old water then add the chickpeas to a pot with cold water and bring to a boil", "Simmer for 30 minutes then check that the chickpeas are soft", "Once the chickpease are soft pour off the hot water and fill with cold water and mix the chickpeas to losten the skins", "The skins should float to the top and you can pour out the water making sure to not lose any chickpeas", "Repeat this stage until most of the skins are gone", "Add the chickpeas to a food processor and blend until smooth", "Add the garlic, lemon juice, cumin, paprika and tahini", "Blend again and slowly at the cold water until smooth", "Pour out onto a plate and top with olive oil and paprika"],
         "ingredients": ["of Dried Chickpeas", "of Tahini", "of Salt", "of Bicarbonate of Soda", "of Garlic", "of Lemon Juice", "of Ground Cumin", "of Paprika", "Cold Water"],
         "quantities": [200, 85, 1.5, 0.5, 2, 80, 0.5, 0.5, 60],
         "unit": ["g", "g", "tsp", "tsp", "Cloves", "ml", "tsp", "tsp", "ml"],
